@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+/* Header */
+
+header {
+    background: #101828;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #67e8f9;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #0284c7;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #0284c7;
+}
+
+.hero-text > p:not(.tagline) {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #475467;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background: #0369a1;
+}
+
+
+/* Hero Card */
+
+.hero-card {
+    width: 320px;
+    padding: 45px 30px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+.card-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #667085;
+    line-height: 1.6;
+}
+
+
+/* Prediction Section */
+
+.predict-section {
+    padding: 80px 8%;
+    background: white;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #667085;
+    line-height: 1.6;
+}
+
+
+/* Prediction Container */
+
+.prediction-container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+form {
+    background: #f8fafc;
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #e4e7ec;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 13px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: 2px solid #38bdf8;
+}
+
+
+/* Button */
+
+.predict-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #0284c7;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.predict-button:hover {
+    background: #0369a1;
+}
+
+
+/* Result */
+
+.result-card {
+    margin-top: 30px;
+    padding: 35px;
+    text-align: center;
+    background: #ecfeff;
+    border: 1px solid #a5f3fc;
+    border-radius: 18px;
+}
+
+.result-title {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #0e7490;
+}
+
+.result-card h2 {
+    font-size: 42px;
+    color: #0369a1;
+    margin: 12px 0;
+}
+
+.result-card p:last-child {
+    color: #667085;
+}
+
+
+/* About */
+
+.about {
+    padding: 80px 8%;
+    background: #f5f7fb;
+}
+
+.features {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card h3 {
+    color: #0284c7;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.feature-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #667085;
+    line-height: 1.6;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+    background: #101828;
+    color: white;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}

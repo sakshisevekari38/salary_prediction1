@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalaryPredict AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">SalaryPredict AI</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#predict">Predict</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <p class="tagline">AI-POWERED SALARY ESTIMATION</p>
+
+            <h1>
+                Discover Your<br>
+                <span>Expected Salary.</span>
+            </h1>
+
+            <p>
+                Enter your professional details and let our machine
+                learning model estimate your expected salary.
+            </p>
+
+            <a href="#predict" class="hero-button">
+                Predict My Salary
+            </a>
+        </div>
+
+        <div class="hero-card">
+            <div class="card-icon">💼</div>
+            <h3>Smart Salary Prediction</h3>
+            <p>
+                Data-driven salary estimation using Machine Learning.
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="predict-section" id="predict">
+
+        <div class="section-heading">
+            <p class="tagline">SALARY PREDICTION</p>
+            <h2>Enter Your Details</h2>
+            <p>
+                Fill in the information below to get an estimated salary.
+            </p>
+        </div>
+
+
+        <div class="prediction-container">
+
+            <form id="predictionForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input
+                            type="number"
+                            id="Age"
+                            placeholder="e.g. 25"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Years of Experience</label>
+                        <input
+                            type="number"
+                            id="Years_of_Experience"
+                            placeholder="e.g. 2"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Education</label>
+
+                        <select id="Education" required>
+                            <option value="">Select Education</option>
+                            <option value="Bachelor">Bachelor</option>
+                            <option value="Master">Master</option>
+                            <option value="PhD">PhD</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Job Role</label>
+
+                        <select id="Job_Role" required>
+                            <option value="">Select Job Role</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Data Analyst">Data Analyst</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Designer">Designer</option>
+                            <option value="Tester">Tester</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Location</label>
+
+                        <select id="Location" required>
+                            <option value="">Select Location</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label>Previous Salary</label>
+
+                        <input
+                            type="number"
+                            id="Previous_Salary"
+                            placeholder="e.g. 40000"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="predict-button">
+                    Predict Salary
+                </button>
+
+            </form>
+
+
+            <div class="result-card">
+
+                <p class="result-title">ESTIMATED SALARY</p>
+
+                <h2 id="predictedSalary">
+                    ₹ 0
+                </h2>
+
+                <p id="resultMessage">
+                    Enter your details and click Predict Salary.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="about" id="about">
+
+        <div class="section-heading">
+            <p class="tagline">ABOUT THE PROJECT</p>
+
+            <h2>How It Works</h2>
+
+            <p>
+                SalaryPredict AI uses Machine Learning to estimate salary
+                based on professional and educational information.
+            </p>
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature-card">
+                <h3>01</h3>
+                <h4>Enter Details</h4>
+                <p>
+                    Provide your age, experience, education and other details.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>02</h3>
+                <h4>ML Prediction</h4>
+                <p>
+                    Our trained Machine Learning model processes the data.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>03</h3>
+                <h4>Get Result</h4>
+                <p>
+                    Receive an estimated salary instantly.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 SalaryPredict AI | Machine Learning Project</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
